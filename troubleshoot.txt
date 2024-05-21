@@ -1,0 +1,47 @@
+#1. Run the Deployment Script Manually:
+#
+#	cd /var/www/project
+#	sudo /var/www/project/deploy.sh
+#
+# Check Deployment Logs:
+#
+#	sudo cat /var/www/project/deploy.log
+#
+#
+#	Step 3: Verify Git Repository State
+#	- Check the Latest Commit:
+#  	- Ensure that the latest commit has been pulled:
+#  	cd /var/www/project
+#   	git log -1
+#
+#
+#Step 4: Review Nginx Logs
+#- Check Nginx Error Logs:
+#  - Look for any errors in the Nginx error log that might indicate issues with the webhook request or script execution:
+#    sudo tail -f /var/log/nginx/error.log
+#
+#
+#Step 5: Clear Server-Side Cache
+#- Clear Nginx Cache (if applicable):
+# - If you are using Nginx caching, clear the cache by reloading the service:
+#   sudo systemctl reload nginx
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
